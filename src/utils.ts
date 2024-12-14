@@ -1,7 +1,7 @@
 import fs from 'fs';
 import https from 'https';
 
-export const sanitizeTitle = (title: string): string => title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+export const generateTitleUrl = (title: string): string => title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
 export const downloadImage = (url: string, filepath: string): Promise<void> => {
   return new Promise((resolve, reject) => {
