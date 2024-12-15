@@ -78,6 +78,7 @@ const manufactureSelector = 'div.d-flex.justify-content-between.w-100';
       link: result.link,
       manufacture: result.manufacture,
       description: description || '',
+      img: filepath,
     });
   }
 
